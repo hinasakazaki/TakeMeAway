@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.berkeley.cs160.hinasakazaki.prog3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.berkeley.cs160.hinasakazaki.prog3.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.berkeley.cs160.hinasakazaki.prog3.Shoot"
+            android:label="@string/title_activity_shoot" >
+        </activity>
+        <activity
+            android:name="edu.berkeley.cs160.hinasakazaki.prog3.Related"
+            android:label="@string/title_activity_related" >
+        </activity>
+        <activity
+            android:name="edu.berkeley.cs160.hinasakazaki.prog3.Nope"
+            android:label="@string/title_activity_nope" >
+        </activity>
+        <activity
+            android:name="edu.berkeley.cs160.hinasakazaki.prog3.View"
+            android:label="@string/title_activity_view" >
+        </activity>
+    </application>
+
+</manifest>
